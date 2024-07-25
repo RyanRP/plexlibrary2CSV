@@ -157,7 +157,7 @@ if movies_or_tv.lower() == 'movies':
     print("\nCreating .csv file...")
     try:
         with open(f'movies-{datetime.now().strftime("%Y-%m-%d-%H.%M.%S")}.csv', 'w') as movies_csv:
-            writer = csv.DictWriter(movies_csv, fieldnames=labels)
+            writer = csv.DictWriter(movies_csv, delimiter=',', lineterminator='\n', fieldnames=labels)
             writer.writeheader()
             for elem in movie_list:
                 writer.writerow(elem)
@@ -192,7 +192,7 @@ elif movies_or_tv.lower() == 'tv':
     print("\nCreating .csv file...")
     try:
         with open(f'tv-episodes-{datetime.now().strftime("%Y-%m-%d-%H.%M.%S")}.csv', 'w') as tv_csv:
-            writer = csv.DictWriter(tv_csv, fieldnames=labels)
+            writer = csv.DictWriter(tv_csv, delimiter=',', lineterminator='\n', fieldnames=labels)
             writer.writeheader()
             for elem in tv_list:
                 writer.writerow(elem)
