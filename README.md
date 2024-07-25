@@ -32,6 +32,8 @@ PLEX_URL="http://192.168.X.X:32400"
 PLEX_TOKEN="xxxxxxxxxxxxxxxxxxxx"
 ```
 ### How to get your token
+Note: I was not able to find the token using the following method but could find it in the advanced config - See https://support.plex.tv/articles/201105343-advanced-hidden-server-settings/ for finding the advanced config.
+
 1. Go to your Plex server and select one of your Film libraries. Select the three dots on any film and select 'Get Info'
 ![1-get-info](https://user-images.githubusercontent.com/71404312/111868394-9049d680-8971-11eb-97a1-04d060c6f8fb.jpg)
 
